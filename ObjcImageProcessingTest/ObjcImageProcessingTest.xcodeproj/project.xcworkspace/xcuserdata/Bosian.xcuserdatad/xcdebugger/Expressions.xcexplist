@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__26-[ViewController handler:]_block_invoke_2:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf.destImageView.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController process:destImage:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.height">
+            </PersistentString>
+            <PersistentString
+               value = "self.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

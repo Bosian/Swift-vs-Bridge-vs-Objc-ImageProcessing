@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.(handler(UIButton) -&gt; ()).(closure #1).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.process(UIImage) -&gt; UIImage?:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data.length">
+            </PersistentString>
+            <PersistentString
+               value = "pixels[r]">
+            </PersistentString>
+            <PersistentString
+               value = "pixels">
+            </PersistentString>
+            <PersistentString
+               value = "image.scale">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized ViewController.process(UIImage) -&gt; UIImage?:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized ViewController.getImage&lt;A&gt; (UnsafeMutableBufferPointer&lt;A&gt;) -&gt; UIImage? [inlined]:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

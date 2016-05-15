@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftImageProcessingTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJN-6Q-taa">
+                                <rect key="frame" x="143" y="442" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="handler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qbs-FU-ppn"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lena" translatesAutoresizingMaskIntoConstraints="NO" id="59T-iW-jLl">
+                                <rect key="frame" x="0.0" y="63" width="320" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="84A-sv-bcT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="耗時: 0ms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-1H-IDc">
+                                <rect key="frame" x="20" y="28" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-tQ-J2D">
+                                <rect key="frame" x="150" y="28" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QsG-C6-icq">
+                                <rect key="frame" x="0.0" y="215" width="320" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MZ4-1H-IDc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9Tj-5a-UIV"/>
+                            <constraint firstItem="59T-iW-jLl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dfc-pJ-iNH"/>
+                            <constraint firstItem="Qbh-tQ-J2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E69-gu-qgQ"/>
+                            <constraint firstAttribute="trailing" secondItem="59T-iW-jLl" secondAttribute="trailing" id="QHw-Uj-Fy7"/>
+                            <constraint firstItem="QsG-C6-icq" firstAttribute="width" secondItem="59T-iW-jLl" secondAttribute="width" id="Z04-62-SWY"/>
+                            <constraint firstItem="AJN-6Q-taa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bGi-wA-wfD"/>
+                            <constraint firstItem="QsG-C6-icq" firstAttribute="top" secondItem="59T-iW-jLl" secondAttribute="bottom" constant="27" id="hzK-hV-Mbs"/>
+                            <constraint firstItem="59T-iW-jLl" firstAttribute="top" secondItem="MZ4-1H-IDc" secondAttribute="bottom" constant="14" id="mmI-YM-P8L"/>
+                            <constraint firstItem="MZ4-1H-IDc" firstAttribute="centerY" secondItem="Qbh-tQ-J2D" secondAttribute="centerY" id="nc5-xd-gve"/>
+                            <constraint firstItem="Qbh-tQ-J2D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rBU-EZ-X1v"/>
+                            <constraint firstItem="QsG-C6-icq" firstAttribute="height" secondItem="59T-iW-jLl" secondAttribute="height" id="tf6-qo-1pJ"/>
+                            <constraint firstItem="QsG-C6-icq" firstAttribute="centerX" secondItem="59T-iW-jLl" secondAttribute="centerX" id="xL8-Lo-O7j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AJN-6Q-taa" secondAttribute="bottom" constant="8" id="zRw-Ef-I77"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="destImageView" destination="QsG-C6-icq" id="9Pj-z2-DN7"/>
+                        <outlet property="sourceImageView" destination="59T-iW-jLl" id="GAE-MZ-uaF"/>
+                        <outlet property="timeLabel" destination="MZ4-1H-IDc" id="rBd-yu-DaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lena" width="512" height="512"/>
+    </resources>
+</document>
